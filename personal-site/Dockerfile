@@ -5,6 +5,7 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+
 # Install dependencies first (better caching)
 COPY package.json package-lock.json* pnpm-lock.yaml* yarn.lock* ./
 RUN npm install

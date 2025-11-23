@@ -17,9 +17,6 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Show directory structure (debug)
-        run: tree -L 3 .
-
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
